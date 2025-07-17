@@ -6,8 +6,8 @@ interface PageProps {
   };
 }
 
-export default async function Page({ params }: PageProps) {
-  const { id } = await params;
+export default function Page({ params }: PageProps) {
+  const { id } = params;
 
   return <ChatroomPageClient id={id} />;
 }
