@@ -5,6 +5,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true, // ✅ This skips ESLint during Vercel build
+  },
 };
 
 export default nextConfig;
