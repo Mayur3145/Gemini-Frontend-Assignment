@@ -8,7 +8,7 @@ import Link from 'next/link';
 import DarkModeToggle from '@/components/ui/DarkModeToggle';
 import ChatMessages from '@/components/chat/ChatMessages';
 import MessageInput from '@/components/chat/MessageInput';
-import { useParams } from '@/hooks/useParams';
+
 import MessageSkeletonGroup from '@/components/chat/MessageSkeletonGroup';
 
 interface ChatroomPageProps {
@@ -17,10 +17,11 @@ interface ChatroomPageProps {
   };
 }
 
+
 export default function ChatroomPage({ params }: ChatroomPageProps) {
   // Use our custom hook to handle params in a future-proof way
-  const unwrappedParams = useParams(params);
-  const { id } = unwrappedParams;
+    const { id } = params;
+
   
   const [isPageLoading, setIsPageLoading] = useState(true);
   
