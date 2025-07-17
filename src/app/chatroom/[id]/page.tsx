@@ -1,12 +1,5 @@
 import ChatroomPageClient from '../../../components/chatroom/ChatroomPageClient';
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function Page({ params }: PageProps) {
-  const { id } = params;
-  return <ChatroomPageClient id={id} />;
+export default async function Page({ params }: { params: { id: string } }) {
+  return <ChatroomPageClient id={params.id} />;
 }
