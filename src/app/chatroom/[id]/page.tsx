@@ -1,4 +1,4 @@
-import ChatroomPageClient from './ChatroomPageClient';
+import ChatroomPageClient from '../../../components/chatroom/ChatroomPageClient';
 
 interface PageProps {
   params: {
@@ -8,6 +8,5 @@ interface PageProps {
 
 export default function Page({ params }: PageProps) {
   const { id } = params;
-
   return <ChatroomPageClient id={id} />;
 }
