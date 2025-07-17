@@ -138,7 +138,7 @@ export default function PhoneLogin({ onOtpSent }: { onOtpSent: () => void }) {
               {/* Country Dropdown */}
               {isCountryDropdownOpen && (
                 <div className="absolute z-10 mt-1 w-64 bg-gray-50 dark:bg-gray-700 shadow-lg rounded-md max-h-60 overflow-auto">
-                  {/* <div className="p-2">
+                  <div className="p-2">
                     <input
                       type="text"
                       className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-gray-50 dark:bg-gray-800 text-sm"
@@ -148,7 +148,7 @@ export default function PhoneLogin({ onOtpSent }: { onOtpSent: () => void }) {
                         // This would be implemented in a real app
                       }}
                     />
-                  </div> */}
+                  </div>
                   <ul className="py-1">
                     {countries.map((country) => (
                       <li key={country.code}>

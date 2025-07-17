@@ -1,11 +1,8 @@
+'use client'
+
 import ChatroomPageClient from '../../../components/chatroom/ChatroomPageClient';
 
-interface PageProps {
-  params: { id: string };
+// Use this exact type definition
+export default function Page({ params }: { params: { id: string } }) {
+  return <ChatroomPageClient id={params.id} />;
 }
-
-export default async function Page({ params }: PageProps) {
-  const { id } = params;
-  return <ChatroomPageClient id={id} />;
-}
-
